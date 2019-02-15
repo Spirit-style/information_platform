@@ -65,7 +65,10 @@
       },
       methods: {
           getdata(){
-            axios.get("/lostafound/board").then((response) => {
+            axios({
+              url:apiRoot +"/lostafound/board",
+              methods:'get'
+            }).then((response) => {
               let res = response.data;
               if(res.status === "success") {
                 this.msg = res.board;

@@ -127,9 +127,13 @@
             if(!this.loginForm.userId||!this.loginForm.userPwd){
               this.errorTip1 = true;
             } else {
-              axios.post("/login", {
-                userId: this.loginForm.userId,
-                userPwd: this.loginForm.userPwd,
+              axios({
+                url: apiRoot + '/login',
+                method: 'post',
+                data: {
+                  userId: this.loginForm.userId,
+                  userPwd: this.loginForm.userPwd,
+                }
               }).then((response) => {
                 let res = response.data;
                 if (res.status === "success") {
@@ -143,6 +147,7 @@
                   localStorage.setItem('userNickname',res.data.userNickname)
                   localStorage.setItem('userId',res.data.userId)
                   this.$store.commit('isLogin',{token:res.data.token,userNickname:res.data.userNickname,userId:res.data.userId})
+                  this.$Message.info("登录成功！");
                 } else {
                   this.errorTip = true;
                 }

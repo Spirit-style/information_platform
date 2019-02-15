@@ -71,17 +71,17 @@
     },
     methods:{
       ok(id){
-        this.$Message.success('删除成功！');
-        axios.post("/lostafound/delete", {
-          postid: this.msgclick.id,
-          token: this.$store.state.token,
-          userid: this.$store.state.userId,
+        axios("/lostafound/delete", {
+          url: apiRoot + '/lostafound/delete/' + this.$store.state.userId+'/'+this.msgclick.id,
+          headers: {Authorization: this.$store.state.token},
+          method:'post'
         }).then((response) => {
           let res = response.data;
           if (res.status === "success"){
             for(var i =0 ;i<this.msg.length;i++){
               if(this.msg[i].id === this.msgclick.id){
                 this.msg.splice(i,1);
+                this.$Message.success('删除成功！');
                 break;
               }
             }
@@ -104,9 +104,10 @@
       this.modal1=true;
     },
       getdata(){
-        axios.get("/lostafound/myboard", {
-          token: this.$store.state.token,
-          userid: this.$store.state.userId,
+        axios({
+          url: apiRoot + '/lostafound/myboard/' + this.$store.state.userId,
+          headers: {Authorization: this.$store.state.token},
+          method:'get'
         }).then((response) => {
           let res = response.data;
           if(res.status === "success") {

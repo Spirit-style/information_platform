@@ -63,12 +63,16 @@
             this.$Message.warning('类型不能为空');
           }
           else{
-            axios.post("/manage/announcement/publish", {
-              token: this.$store.state.token,
-              manageid: this.$store.state.userId,
-              title:this.value1,
-              content:this.value2,
-              type:this.type
+            axios({
+              url:apiRoot+'/manage/announcement/publish',
+              headers: {Authorization: this.$store.state.token},
+              data:{
+                manageid: this.$store.state.userId,
+                title:this.value1,
+                content:this.value2,
+                type:this.type
+              },
+              method:'post'
             }).then((response) => {
               let res = response.data;
               if(res.status === "success") {

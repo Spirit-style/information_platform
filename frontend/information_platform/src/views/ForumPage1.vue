@@ -194,8 +194,9 @@
           }
         },
         init(){
-          axios.get("/forum/newreply", {
-            label: this.labelid,
+          axios({
+            url: apiRoot + '/forum/newreply/' + this.labelid,
+            method: 'get',
           }).then((response) => {
             let res = response.data;
             if(res.status === "success") {
@@ -206,8 +207,9 @@
               this.errormsg1 = res.message;
             }
           });
-          axios.get("/forum/newpublish", {
-            label: this.labelid,
+          axios({
+            url: apiRoot + '/forum/newpublish/' + this.labelid,
+            method: 'get',
           }).then((response) => {
             let res = response.data;
             if(res.status === "success") {
@@ -218,8 +220,9 @@
               this.errormsg2 = res.message;
             }
           });
-          axios.get("/forum/best", {
-            label: this.labelid,
+          axios({
+            url: apiRoot + '/forum/best/' + this.labelid,
+            method: 'get',
           }).then((response) => {
             let res = response.data;
             if(res.status === "success") {
@@ -230,8 +233,9 @@
               this.errormsg3 = res.message;
             }
           });
-          axios.get("/forum/all", {
-            label: this.labelid,
+          axios({
+            url: apiRoot  + '/forum/all/' + this.labelid,
+            method: 'get',
           }).then((response) => {
             let res = response.data;
             if(res.status === "success") {
@@ -244,9 +248,10 @@
           })
         },
         checktype(){
-          axios.get("/appeal/get", {
-            token: this.$store.state.token,
-            userId: this.$store.state.userId,
+          axios({
+            url: apiRoot + '/appeal/get/' + this.$store.state.userId,
+            headers: {Authorization: this.$store.state.token},
+            method: 'get',
           }).then((response) => {
             let res = response.data;
             if(res.status === "success") {

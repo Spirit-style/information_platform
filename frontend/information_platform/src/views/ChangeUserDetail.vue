@@ -1,6 +1,7 @@
 <template>
   <div>
     <tophead></tophead>
+    <!--<h1>{{user.id}}</h1>-->
     <div class="center">
       <font size="4">用户id： {{user.id}}</font>
       <br>
@@ -127,9 +128,10 @@
       getParams(){
         this.user.id = this.$store.state.userId;
         this.user.nickname = this.$store.state.userNickname;
-        axios.get("/user/showmyself", {
-          token: this.$store.state.token,
-          userid: this.$store.state.userId,
+        axios({
+          url: apiRoot + '/user/showmyself/' + this.$store.state.userId,
+          headers: {Authorization: this.$store.state.token},
+          method: 'get',
         }).then((response) => {
           let res = response.data;
           if(res.status === "success") {
@@ -149,10 +151,10 @@
       },
       setmyself(){
         if(this.value1) {
-          axios.post("/user/setmyself", {
-            token: this.$store.state.token,
-            userid: this.$store.state.userId,
-            usernickname: this.value1,
+          axios({
+            url: apiRoot + '/user/setmyself/' + this.$store.state.userId + '/' + this.value1,
+            headers: {Authorization: this.$store.state.token},
+            method: 'post',
           }).then((response) => {
             let res = response.data;
             if (res.status === "success") {
@@ -170,10 +172,15 @@
       setpwd(){
         if(this.value2 && this.value3 && this.value4) {
           if (this.value3 === this.value4 && this.value3) {
-            axios.post("/editpwd", {
-              userID: this.$store.state.userId,
-              userOldPwd: this.value2,
-              userNewPwd: this.value3,
+            axios({
+              url: apiRoot + '/editpwd',
+              headers: {Authorization: this.$store.state.token},
+              method: 'post',
+              data: {
+                userID: this.$store.state.userId,
+                userOldPwd: this.value2,
+                userNewPwd: this.value3
+              }
             }).then((response) => {
               let res = response.data;
               if (res.status === "success") {
@@ -197,9 +204,10 @@
         }
       },
       getpost(){
-        axios.get("/user/getpost", {
-          token: this.$store.state.token,
-          userid: this.$store.state.userId,
+        axios({
+          url: apiRoot + '/user/getpost/' + this.$store.state.userId,
+          headers: {Authorization: this.$store.state.token},
+          method: 'get',
         }).then((response) => {
           let res = response.data;
           if(res.status === "success") {
@@ -213,9 +221,10 @@
         })
       },
       getcomment(){
-        axios.get("/user/getcomment", {
-          token: this.$store.state.token,
-          userid: this.$store.state.userId,
+        axios({
+          url: apiRoot + '/user/getcomment/' + this.$store.state.userId,
+          headers: {Authorization: this.$store.state.token},
+          method: 'get',
         }).then((response) => {
           let res = response.data;
           if(res.status === "success") {
@@ -229,10 +238,10 @@
         })
       },
       deletepost(id){
-        axios.post("/user/deletepost", {
-          token: this.$store.state.token,
-          userid: this.$store.state.userId,
-          postid: id,
+        axios({
+          url: apiRoot + '/user/deletepost/' + this.$store.state.userId + '/' + id,
+          headers: {Authorization: this.$store.state.token},
+          method: 'post',
         }).then((response) => {
           let res = response.data;
           if(res.status === "success") {
@@ -254,10 +263,10 @@
         })
       },
       deletecomment(id){
-        axios.post("/user/deletecomment", {
-          token: this.$store.state.token,
-          userid: this.$store.state.userId,
-          commentid: id,
+        axios({
+          url: apiRoot + '/user/deletecomment/' + this.$store.state.userId + '/' + id,
+          headers: {Authorization: this.$store.state.token},
+          method: 'post',
         }).then((response) => {
           let res = response.data;
           if(res.status === "success") {

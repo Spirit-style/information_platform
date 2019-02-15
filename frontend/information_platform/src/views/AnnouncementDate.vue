@@ -99,7 +99,10 @@
     methods: {
       getdata(date){
         console.log(date);
-        axios.get("/announcement").then((response) => {
+        axios({
+          url:'/announcement',
+          method:'get'
+        }).then((response) => {
           let res = response.data;
           if(res.status === "success") {
             this.msg = res.announcement;

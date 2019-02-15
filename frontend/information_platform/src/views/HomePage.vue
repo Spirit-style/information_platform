@@ -61,7 +61,10 @@
         },
         methods:{
           getdata() {
-            axios.get("/announcement/new").then((response) => {
+            axios({
+              url:apiRoot+'/api/announcement/new',
+              method:'get'
+            }).then((response) => {
               let res = response.data;
               if(res.status === "success") {
                 this.msg = res.announcement;

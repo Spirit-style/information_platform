@@ -179,9 +179,10 @@
         },
       methods:{
         getdata(){
-          axios.get("/manage/user", {
-              token: this.$store.state.token,
-              manageid: this.$store.state.userId,
+          axios({
+            url:apiRoot+'/manage/user/'+this.$store.state.userId,
+            headers: {Authorization: this.$store.state.token},
+            method:'get'
             }).then((response) => {
             let res = response.data;
             if(res.status === "success") {
@@ -217,11 +218,15 @@
           this.modal2=true;
         },
         ok1 (id) {
-          axios.post("/manage/user/password", {
-            token: this.$store.state.token,
-            manageid: this.$store.state.userId,
-            id:id,
-            password:this.value,
+          axios({
+            url:apiRoot+'/manage/user/password',
+            headers: {Authorization: this.$store.state.token},
+            data:{
+              manageid: this.$store.state.userId,
+              id:id,
+              password:this.value,
+            },
+            method:'post'
           }).then((response) => {
             let res = response.data;
             if(res.status === "success") {
@@ -251,13 +256,17 @@
               if(id === this.msg[i].id){
                 if(this.msg[i].status === '未封禁'){
                   if(this.formValidate.forbid_date !== '' && this.formValidate.forbid_reason !== '' && this.formValidate.forbid_type !== '') {
-                    axios.post("/manage/user/password", {
-                      token: this.$store.state.token,
-                      manageid: this.$store.state.userId,
-                      id:id,
-                      forbid_type:this.formValidate.forbid_type,
-                      forbid_reason:this.formValidate.forbid_reason,
-                      forbid_date:this.formValidate.forbid_date
+                    axios.post({
+                      url:apiRoot+'/manage/user/forbid',
+                      headers: {Authorization: this.$store.state.token},
+                      data:{
+                        manageid: this.$store.state.userId,
+                        id:id,
+                        forbid_type:this.formValidate.forbid_type,
+                        forbid_reason:this.formValidate.forbid_reason,
+                        forbid_date:this.formValidate.forbid_date
+                      },
+                      method:'post'
                     }).then((response) => {
                       let res = response.data;
                       if(res.status === "success") {
@@ -283,10 +292,10 @@
                 }
                 else {
                   this.$Message.success('解除封禁成功');
-                  axios.post("/manage/user/password", {
-                    token: this.$store.state.token,
-                    manageid: this.$store.state.userId,
-                    id:id,
+                  axios({
+                    url:apiRoot+'/manage/user/release/'+this.$store.state.userId+'/'+id,
+                    headers: {Authorization: this.$store.state.token},
+                    method:'post'
                   }).then((response) => {
                     let res = response.data;
                     if(res.status === "success") {

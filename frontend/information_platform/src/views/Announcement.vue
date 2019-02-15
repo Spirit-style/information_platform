@@ -92,7 +92,10 @@
       },
       methods: {
         getdata() {
-          axios.get("/announcement").then((response) => {
+          axios({
+            url:'/announcement',
+            method:'get'
+          }).then((response) => {
             console.log(response)
             let res = response.data;
             if(res.status === "success") {

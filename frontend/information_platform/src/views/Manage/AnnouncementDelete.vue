@@ -70,102 +70,6 @@
           modal1:false,
           msgclick:{},
           msg:[
-            // {
-            //   id:0,
-            //   title:'史蒂夫·乔布斯(系统通知)',
-            //   content:'史蒂夫·乔布斯（Steve Jobs），1955年2月24日生于美国加利福尼亚州旧金山，美国发明家、企业家、美国苹果公司联合创办人。',
-            //   date:'2012-2-2',
-            //   addresser:'刘某人',
-            //   type:'系统通知'
-            // },
-            // {
-            //   id:1,
-            //   title:'史蒂夫·乔布斯(系统通知)',
-            //   content:'史蒂夫·乔布斯（Steve Jobs），1955年2月24日生于美国加利福尼亚州旧金山，美国发明家、企业家、美国苹果公司联合创办人。',
-            //   date:'2012-2-2',
-            //   addresser:'刘某人',
-            //   type:'系统通知'
-            // },
-            // {
-            //   id:2,
-            //   title:'史蒂夫·乔布斯(系统通知)',
-            //   content:'史蒂夫·乔布斯（Steve Jobs），1955年2月24日生于美国加利福尼亚州旧金山，美国发明家、企业家、美国苹果公司联合创办人。',
-            //   date:'2012-2-2',
-            //   addresser:'刘某人',
-            //   type:'系统通知'
-            // },
-            // {
-            //   id:3,
-            //   title:'史蒂夫·乔布斯(系统通知)',
-            //   content:'史蒂夫·乔布斯（Steve Jobs），1955年2月24日生于美国加利福尼亚州旧金山，美国发明家、企业家、美国苹果公司联合创办人。',
-            //   date:'2012-2-2',
-            //   addresser:'刘某人',
-            //   type:'系统通知'
-            // },
-            // {
-            //   id:4,
-            //   title:'史蒂夫·乔布斯(调休通知)',
-            //   content:'史蒂夫·乔布斯（Steve Jobs），1955年2月24日生于美国加利福尼亚州旧金山，美国发明家、企业家、美国苹果公司联合创办人。',
-            //   date:'2012-2-2',
-            //   addresser:'刘某人',
-            //   type:'调休通知'
-            // },
-            // {
-            //   id:5,
-            //   title:'史蒂夫·乔布斯(调休通知)',
-            //   content:'史蒂夫·乔布斯（Steve Jobs），1955年2月24日生于美国加利福尼亚州旧金山，美国发明家、企业家、美国苹果公司联合创办人。',
-            //   date:'2012-2-2',
-            //   addresser:'刘某人',
-            //   type:'调休通知'
-            // },
-            // {
-            //   id:6,
-            //   title:'史蒂夫·乔布斯(调休通知)',
-            //   content:'史蒂夫·乔布斯（Steve Jobs），1955年2月24日生于美国加利福尼亚州旧金山，美国发明家、企业家、美国苹果公司联合创办人。',
-            //   date:'2012-2-2',
-            //   addresser:'刘某人',
-            //   type:'调休通知'
-            // },
-            // {
-            //   id:7,
-            //   title:'史蒂夫·乔布斯(调休通知)',
-            //   content:'史蒂夫·乔布斯（Steve Jobs），1955年2月24日生于美国加利福尼亚州旧金山，美国发明家、企业家、美国苹果公司联合创办人。',
-            //   date:'2012-2-2',
-            //   addresser:'刘某人',
-            //   type:'调休通知'
-            // },
-            // {
-            //   id:8,
-            //   title:'史蒂夫·乔布斯(失物启示)',
-            //   content:'史蒂夫·乔布斯（Steve Jobs），1955年2月24日生于美国加利福尼亚州旧金山，美国发明家、企业家、美国苹果公司联合创办人。',
-            //   date:'2012-2-2',
-            //   addresser:'刘某人',
-            //   type:'失物启示'
-            // },
-            // {
-            //   id:9,
-            //   title:'史蒂夫·乔布斯(失物启示)',
-            //   content:'史蒂夫·乔布斯（Steve Jobs），1955年2月24日生于美国加利福尼亚州旧金山，美国发明家、企业家、美国苹果公司联合创办人。',
-            //   date:'2012-2-2',
-            //   addresser:'刘某人',
-            //   type:'失物启示'
-            // },
-            // {
-            //   id:10,
-            //   title:'史蒂夫·乔布斯(失物启示)',
-            //   content:'史蒂夫·乔布斯（Steve Jobs），1955年2月24日生于美国加利福尼亚州旧金山，美国发明家、企业家、美国苹果公司联合创办人。',
-            //   date:'2012-2-2',
-            //   addresser:'刘某人',
-            //   type:'失物启示'
-            // },
-            // {
-            //   id:11,
-            //   title:'史蒂夫·乔布斯(失物启示)',
-            //   content:'史蒂夫·乔布斯（Steve Jobs），1955年2月24日生于美国加利福尼亚州旧金山，美国发明家、企业家、美国苹果公司联合创办人。',
-            //   date:'2012-2-2',
-            //   addresser:'刘某人',
-            //   type:'失物启示'
-            // }
           ],
           a1:[],
           a2:[],
@@ -174,9 +78,10 @@
       },
       methods: {
         getdata(){
-          axios.get("/manage/announcement", {
-            token: this.$store.state.token,
-            manageid: this.$store.state.userId,
+          axios({
+            url:apiRoot+'/manage/announcement/'+this.$store.state.userId,
+            headers: {Authorization: this.$store.state.token},
+            method:'get'
           }).then((response) => {
             let res = response.data;
             if(res.status === "success") {
@@ -206,10 +111,14 @@
           }
         },
         ok (id,type) {
-          axios.post("/manage/announcement/delete", {
-            token: this.$store.state.token,
-            manageid: this.$store.state.userId,
-            id:id,
+          axios({
+            url:apiRoot+'/manage/announcement/delete',
+            headers: {Authorization: this.$store.state.token},
+            data:{
+              manageid: this.$store.state.userId,
+              id:id,
+            },
+            method:'post'
           }).then((response) => {
             let res = response.data;
             if(res.status === "success") {
