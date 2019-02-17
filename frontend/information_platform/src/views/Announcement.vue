@@ -99,7 +99,7 @@
             console.log(response)
             let res = response.data;
             if(res.status === "success") {
-              this.msg = res.announcement;
+              this.msg = res.data;
               console.log(this.msg);
               this.classify();
             } else {

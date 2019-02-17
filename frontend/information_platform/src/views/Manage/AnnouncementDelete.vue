@@ -85,7 +85,7 @@
           }).then((response) => {
             let res = response.data;
             if(res.status === "success") {
-              this.msg = res.announcement;
+              this.msg = res.data;
               this.classify();
             } else {
               this.status1 = res.status;

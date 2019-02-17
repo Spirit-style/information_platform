@@ -105,7 +105,7 @@
         }).then((response) => {
           let res = response.data;
           if(res.status === "success") {
-            this.msg = res.announcement;
+            this.msg = res.data;
             var i = 0,j=0;
             for(i = 0; i < this.msg.length; i++){
               if(this.msg[i].date === date){
