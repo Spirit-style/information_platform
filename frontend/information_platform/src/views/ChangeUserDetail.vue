@@ -135,9 +135,9 @@
         }).then((response) => {
           let res = response.data;
           if(res.status === "success") {
-            this.user.id = res.userdate.userid;
-            this.user.nickname = res.userdate.usernickname;
-            this.user.point = res.userdate.userpoint;
+            this.user.id = res.data.userid;
+            this.user.nickname = res.data.usernickname;
+            this.user.point = res.data.userpoint;
             this.status1 = res.status;
           } else {
             this.status1 = res.status;
@@ -152,9 +152,13 @@
       setmyself(){
         if(this.value1) {
           axios({
-            url: apiRoot + '/user/setmyself/' + this.$store.state.userId + '/' + this.value1,
+            url: apiRoot + '/user/setmyself',
             headers: {Authorization: this.$store.state.token},
             method: 'post',
+            data: {
+              userid: this.$store.state.userId,
+              usernickname: this.value1,
+            }
           }).then((response) => {
             let res = response.data;
             if (res.status === "success") {
@@ -184,13 +188,13 @@
             }).then((response) => {
               let res = response.data;
               if (res.status === "success") {
-                this.status7 = res.code;
+                this.status7 = res.status;
                 this.$Message.info('修改密码成功！');
                 this.value2 = '';
                 this.value3 = '';
                 this.value4 = '';
               } else {
-                this.status7 = res.code;
+                this.status7 = res.status;
                 this.errormsg7 = res.message;
                 this.$Message.info('修改密码失败： ' + this.errormsg7);
               }
@@ -211,7 +215,7 @@
         }).then((response) => {
           let res = response.data;
           if(res.status === "success") {
-            this.sendpost = res.post;
+            this.sendpost = res.data;
             this.status3 = res.status;
 
           } else {
@@ -228,7 +232,7 @@
         }).then((response) => {
           let res = response.data;
           if(res.status === "success") {
-            this.replypost = res.reply;
+            this.replypost = res.data;
             this.status4 = res.status;
 
           } else {
@@ -239,9 +243,13 @@
       },
       deletepost(id){
         axios({
-          url: apiRoot + '/user/deletepost/' + this.$store.state.userId + '/' + id,
+          url: apiRoot + '/user/deletepost',
           headers: {Authorization: this.$store.state.token},
           method: 'post',
+          data: {
+            userid: this.$store.state.userId,
+            postid: id,
+          }
         }).then((response) => {
           let res = response.data;
           if(res.status === "success") {
@@ -264,9 +272,13 @@
       },
       deletecomment(id){
         axios({
-          url: apiRoot + '/user/deletecomment/' + this.$store.state.userId + '/' + id,
+          url: apiRoot + '/user/deletecomment',
           headers: {Authorization: this.$store.state.token},
           method: 'post',
+          data: {
+            userid: this.$store.state.userId,
+            commentid: id,
+          }
         }).then((response) => {
           let res = response.data;
           if(res.status === "success") {

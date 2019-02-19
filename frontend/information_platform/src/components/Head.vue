@@ -13,7 +13,6 @@
         &nbsp;&nbsp;
 
         <Button type="primary" shape="circle" @click="jumpLogin" v-if="!$store.state.token">登录</Button>
-        <Button type="primary" shape="circle" v-if="managetype && $store.state.token" to="/Manage/User">管理</Button>
         <Button type="primary" shape="circle" @click="jumpLogout" v-if="$store.state.token">退出</Button>
       </div>
     </div>
@@ -74,7 +73,6 @@
         theme1: 'light',
         status: '',
         errormsg: '',
-        managetype:false,
       }
     },
     methods: {
@@ -83,9 +81,13 @@
       },
       jumpLogout(){
         axios({
-          url: apiRoot + '/logout/' + this.$store.state.userId,
+          // url: apiRoot + '/logout',
+          url: '/api/logout',
           headers: {Authorization: this.$store.state.token},
           method:'post',
+          data: {
+            userid: this.$store.state.userId,
+          }
         }).then((response) => {
           let res = response.data;
           if (res.status === "success") {
@@ -105,27 +107,7 @@
       },
       jumpToChangeUserDetail(){
         this.$router.push({path: '/ChangeUserDetail'})
-      },
-      ifmanage() {
-        axios("/ifmanage", {
-          url:apiRoot+'/ifmanage/'+this.$store.state.userId,
-          headers: {Authorization: this.$store.state.token},
-          method:'get'
-        }).then((response) => {
-          let res = response.data;
-          console.log(response)
-          if (res.status === "success") {
-            this.managetype = res.ifmanage;
-          } else {
-            this.status1 = res.status;
-            this.errormsg1 = res.message;
-            this.$Message.info('失败：' + this.errormsg1);
-          }
-        })
       }
-    },
-    created(){
-      this.ifmanage();
     }
   }
 </script>

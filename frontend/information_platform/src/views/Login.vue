@@ -128,7 +128,8 @@
               this.errorTip1 = true;
             } else {
               axios({
-                url: apiRoot + '/login',
+                // url: apiRoot + '/login',
+                url: '/api/login',
                 method: 'post',
                 data: {
                   userId: this.loginForm.userId,
@@ -138,7 +139,6 @@
                 let res = response.data;
                 if (res.status === "success") {
                   this.errorTip = false;
-                  //to-do
                   var _this = this;
                   setTimeout(function () {
                     _this.$router.push({path: '/HomePage'})

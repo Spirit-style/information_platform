@@ -216,13 +216,13 @@
         }).then((response) => {
           let res = response.data;
           if(res.status === "success") {
-            this.post.postid = res.post.postid;
-            this.post.label = res.post.label;
-            this.post.title = res.post.title;
-            this.post.content = res.post.content;
-            this.post.author = res.post.author;
-            this.post.authornickname = res.post.authornickname;
-            this.post.date = res.post.date;
+            this.post.postid = res.data.postid;
+            this.post.label = res.data.label;
+            this.post.title = res.data.title;
+            this.post.content = res.data.content;
+            this.post.author = res.data.author;
+            this.post.authornickname = res.data.authornickname;
+            this.post.date = res.data.date;
             this.status1 = res.status;
           } else {
             this.status1 = res.status;
@@ -236,7 +236,7 @@
         }).then((response) => {
           let res = response.data;
           if(res.status === "success") {
-            this.hotreply = res.hotreply;
+            this.hotreply = res.data;
             this.status2 = res.status;
           } else {
             this.status2 = res.status;
@@ -250,7 +250,7 @@
         }).then((response) => {
           let res = response.data;
           if(res.status === "success") {
-            this.reply = res.reply;
+            this.reply = res.data;
             this.status3 = res.status;
           } else {
             this.status3 = res.status;
@@ -265,7 +265,7 @@
           }).then((response) => {
             let res = response.data;
             if (res.status === "success") {
-              this.likestatus = res.likestatus;
+              this.likestatus = res.data.likestatus;
               this.status4 = res.status;
             } else {
               this.status4 = res.status;
@@ -280,9 +280,14 @@
             this.$Message.info('评论内容不能为空！');
           } else {
             axios({
-              url: apiRoot + '/forum/createcomment/' + this.$store.state.userId + '/' + this.value1 + '/' + this.postid,
+              url: apiRoot + '/forum/createcomment',
               headers: {Authorization: this.$store.state.token},
               method: 'post',
+              data: {
+                userid: this.$store.state.userId,
+                content: this.value1,
+                postid: this.postid,
+              }
             }).then((response) => {
               let res = response.data;
               if (res.status === "success") {
@@ -303,14 +308,19 @@
       changelikestatus(){
         if(this.$store.state.token) {
           axios({
-            url: apiRoot + '/forum/changelike/' + this.$store.state.userId + '/' + this.postid + '/' + this.likestatus === "true" ? "false" : "true",
+            url: apiRoot + '/forum/changelike',
             headers: {Authorization: this.$store.state.token},
             method: 'post',
+            data: {
+              userid: this.$store.state.userId,
+              postid: this.postid,
+              likestatus: this.likestatus === "true" ? "false" : "true",
+            }
           }).then((response) => {
             let res = response.data;
             if (res.status === "success") {
               this.status6 = res.status;
-              this.likestatus = res.likestatus;
+              this.likestatus = res.data.likestatus;
               this.$Message.info('修改点赞状态成功！');
             } else {
               this.status6 = res.status;
@@ -333,7 +343,7 @@
             let res = response.data;
             if (res.status === "success") {
               this.status7 = res.status;
-              return res.likestatus;
+              return res.data.likestatus;
             } else {
               this.status7 = res.status;
               this.errormsg7 = res.message;
@@ -348,9 +358,14 @@
       changecommentlikestatus(commentid){
         if(this.$store.state.token) {
           axios({
-            url: apiRoot + '/forum/changecommentlike/' + this.$store.state.userId + '/' + commentid + '/' + this.getcommentlikestatus(commentid) === "true" ? "false" : "true",
+            url: apiRoot + '/forum/changecommentlike',
             headers: {Authorization: this.$store.state.token},
             method: 'post',
+            data: {
+              userid: this.$store.state.userId,
+              commentid: commentid,
+              likestatus: this.getcommentlikestatus(commentid) === "true" ? "false" : "true",
+            }
           }).then((response) => {
             let res = response.data;
             if (res.status === "success") {
@@ -388,7 +403,7 @@
           let res = response.data;
           if(res.status === "success") {
             this.status9 = res.status;
-            if(res.type === 1 || res.type === 3)
+            if(res.data.type === 1 || res.data.type === 3)
               this.sign = true;
             else
               this.sign = false;
