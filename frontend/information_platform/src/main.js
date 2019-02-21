@@ -16,10 +16,16 @@ Vue.use(VueAxios,axios)
 
 axios.defaults.timeout = 5000
 axios.defaults.baseURL = 'http://localhost:8081/api'
-
-
 require('./../mock/login')
-
+axios.interceptors.request.use(
+  config => {
+    config.data = JSON.stringify(config.data)
+    config.headers = {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    }
+    return config
+  }
+)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

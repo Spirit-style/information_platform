@@ -129,7 +129,7 @@
             } else {
               axios({
                 // url: apiRoot + '/login',
-                url: '/api/login',
+                url: '/login',
                 method: 'post',
                 data: {
                   userId: this.loginForm.userId,

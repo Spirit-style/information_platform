@@ -219,7 +219,7 @@
       },
       getDetail(){
         axios({
-          url: apiRoot + '/forum/detail/' + this.postid,
+          url: '/forum/detail/' + this.postid,
           method: 'get',
         }).then((response) => {
           let res = response.data;
@@ -238,7 +238,7 @@
           }
         });
         axios({
-          url: apiRoot + '/forum/gethotcomment/' + this.$store.state.userId + '/' + this.postid,
+          url:'/forum/gethotcomment/' + this.$store.state.userId + '/' + this.postid,
           headers: {Authorization: this.$store.state.token},
           method: 'get',
         }).then((response) => {
@@ -252,7 +252,7 @@
           }
         });
         axios({
-          url: apiRoot + '/forum/getcomment/' + this.$store.state.userId + '/' + this.postid,
+          url:'/forum/getcomment/' + this.$store.state.userId + '/' + this.postid,
           headers: {Authorization: this.$store.state.token},
           method: 'get',
         }).then((response) => {
@@ -267,7 +267,7 @@
         });
         if(this.$store.state.token) {
           axios({
-            url: apiRoot + '/forum/getlike/' + this.$store.state.userId + '/' + this.postid,
+            url:'/forum/getlike/' + this.$store.state.userId + '/' + this.postid,
             headers: {Authorization: this.$store.state.token},
             method: 'get',
           }).then((response) => {
@@ -288,7 +288,7 @@
             this.$Message.info('评论内容不能为空！');
           } else {
             axios({
-              url: apiRoot + '/forum/createcomment',
+              url:'/forum/createcomment',
               headers: {Authorization: this.$store.state.token},
               method: 'post',
               data: {
@@ -316,7 +316,7 @@
       changelikestatus(){
         if(this.$store.state.token) {
           axios({
-            url: apiRoot + '/forum/changelike',
+            url:'/forum/changelike',
             headers: {Authorization: this.$store.state.token},
             method: 'post',
             data: {
@@ -344,7 +344,7 @@
       getcommentlikestatus(commentid){
         if(this.$store.state.token) {
           axios({
-            url: apiRoot + '/forum/getcommentlike/' + this.$store.state.userId + '/' + commentid,
+            url:'/forum/getcommentlike/' + this.$store.state.userId + '/' + commentid,
             headers: {Authorization: this.$store.state.token},
             method: 'get',
           }).then((response) => {
@@ -366,7 +366,7 @@
       changecommentlikestatus(commentid){
         if(this.$store.state.token) {
           axios({
-            url: apiRoot + '/forum/changecommentlike',
+            url:'/forum/changecommentlike',
             headers: {Authorization: this.$store.state.token},
             method: 'post',
             data: {
@@ -404,7 +404,7 @@
       },
       checktype(){
         axios({
-          url: apiRoot + '/appeal/get/' + this.$store.state.userId,
+          url:'/appeal/get/' + this.$store.state.userId,
           headers: {Authorization: this.$store.state.token},
           method: 'get',
         }).then((response) => {

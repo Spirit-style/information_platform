@@ -123,7 +123,7 @@
       methods: {
         getrecommendpost(){
           axios({
-            url: apiRoot + '/forum/recommend/' + this.$store.state.userId,
+            url:'/forum/recommend/' + this.$store.state.userId,
             headers: {Authorization: this.$store.state.token},
             method: 'get',
           }).then((response) => {
