@@ -100,19 +100,12 @@
       getdata(date){
         console.log(date);
         axios({
-          url:'/announcement',
+          url:'/announcement/'+date,
           method:'get'
         }).then((response) => {
           let res = response.data;
           if(res.status === "success") {
-            this.msg = res.data;
-            var i = 0,j=0;
-            for(i = 0; i < this.msg.length; i++){
-              if(this.msg[i].date === date){
-                this.aDate.splice(j++, 1, this.msg[i]);
-              }
-            }
-            console.log(this.aDate)
+            this.aDate = res.data;
             this.classify();
           } else {
             this.status1 = res.status;

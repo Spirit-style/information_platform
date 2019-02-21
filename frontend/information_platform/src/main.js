@@ -14,6 +14,9 @@ Vue.config.productionTip = false
 Vue.use(iView)
 Vue.use(VueAxios,axios)
 
+axios.defaults.timeout = 5000
+axios.defaults.baseURL = 'http://localhost:8081/api'
+
 
 require('./../mock/login')
 

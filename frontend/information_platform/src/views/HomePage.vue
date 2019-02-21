@@ -62,7 +62,7 @@
         methods:{
           getdata() {
             axios({
-              url:apiRoot+'/api/announcement/new',
+              url:'/announcement/new',
               method:'get'
             }).then((response) => {
               let res = response.data;
@@ -72,6 +72,20 @@
               } else {
                 this.status1 = res.status;
                 this.errormsg1 = res.message;
+                for(let i;i<this.msg.length;i++){
+                  switch (this.msg[i].type){
+                    case '1':
+                      this.msg[i].type ='系统通知';
+                      break;
+                    case '2':
+                      this.msg[i].type ='调休通知';
+                      break;
+                    case '3':
+                      this.msg[i].type ='失物启示';
+                      break;
+
+                  }
+                }
                 this.$Message.info('获取失败： ' + this.errormsg1);
               }
             })

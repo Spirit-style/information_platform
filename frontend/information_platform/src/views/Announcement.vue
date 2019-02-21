@@ -116,13 +116,13 @@
             //     this.a1.splice(i++, 1, this.msg[index])
             // }
             switch (this.msg[index].type){
-              case '系统通知':
+              case '1':
                 this.a1.splice(i++, 1, this.msg[index]);
                 break
-              case '调休通知':
+              case '2':
                 this.a2.splice(j++, 1, this.msg[index]);
                 break
-              case '失物启示':
+              case '3':
                 this.a3.splice(k++, 1, this.msg[index]);
                 break
             }
