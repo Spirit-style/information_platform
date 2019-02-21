@@ -2,230 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10a9825c-fded-44da-984c-1d60a5950a4b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/backend.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/.idea/dataSources/7a9b87c4-ef3d-4368-bf75-e505f5912d4f.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/.idea/libraries/Maven__com_auth0_java_jwt_3_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/.idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_9_0_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_9_0_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/.idea/libraries/Maven__org_projectlombok_lombok_1_16_18.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/.idea/platform.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/controller/ForumController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/controller/MessageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/controller/NoticeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/dao/CommentsMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/ResultCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/databaseResulttype/All.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/databaseResulttype/Best.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/databaseResulttype/GetAllComment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/databaseResulttype/GetHotComment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/databaseResulttype/NewPublish.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/databaseResulttype/NewReply.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/entity/Comments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/entity/CommentsExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/jsonRequest/ForumChangeCommentLike.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/jsonRequest/ForumChangeLike.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/jsonRequest/ForumCreateComment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/jsonRequest/ForumCreatePost.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/jsonRequest/ForumGetAllComment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/jsonRequest/ForumGetCommentLike.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/jsonRequest/ForumGetHotComment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/jsonRequest/ForumGetLike.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/jsonRequest/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/jsonRequest/MessageDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/jsonRequest/MessageSend.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/jsonRequest/addFriend.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/jsonRequest/addNoticeJsonRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/jsonRequest/addToBlackList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/jsonRequest/claimedAndUnfinishedHelp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/jsonRequest/deleteNoticeJsonRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/jsonRequest/loginUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/jsonRequest/searchPeople.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/jsonRequest/unclaimHelp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/jsonRequest/userRelationship.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/ov/FindNoticeInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/ov/ForumAll.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/ov/ForumBest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/ov/ForumChangeCommentLike.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/ov/ForumChangeLike.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/ov/ForumDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/ov/ForumGetAllComment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/ov/ForumGetCommentLike.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/ov/ForumGetHotComment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/ov/ForumGetLike.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/ov/ForumNewPublish.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/ov/ForumNewReply.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/ov/ForumRecommend.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/ov/MessageDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/ov/MessageReceive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/ov/MessageSent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/ov/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/ov/UserGetFriend.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/response/TokenResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/service/ForumService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/service/HelpService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/service/Impl/ForumServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/service/Impl/HelpServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/service/Impl/MessageServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/service/Impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/tools/AuthTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/tools/JwtTools.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/tools/JwtUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/tools/SecurityTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/src/main/resources/mapping/CommentsMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/target/classes/com/example/demo/dao/Tag_UsersMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/target/classes/com/example/demo/dao/ViewsMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/target/classes/com/example/demo/model/databaseResulttype/All.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/target/classes/com/example/demo/model/databaseResulttype/Best.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/target/classes/com/example/demo/model/databaseResulttype/NewPublish.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/target/classes/com/example/demo/model/databaseResulttype/NewReply.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/target/classes/com/example/demo/model/entity/Tag_Users.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/target/classes/com/example/demo/model/entity/Tag_UsersExample$Criteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/target/classes/com/example/demo/model/entity/Tag_UsersExample$Criterion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/target/classes/com/example/demo/model/entity/Tag_UsersExample$GeneratedCriteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/target/classes/com/example/demo/model/entity/Tag_UsersExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/target/classes/com/example/demo/model/entity/Views.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/target/classes/com/example/demo/model/entity/ViewsExample$Criteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/target/classes/com/example/demo/model/entity/ViewsExample$Criterion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/target/classes/com/example/demo/model/entity/ViewsExample$GeneratedCriteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/target/classes/com/example/demo/model/entity/ViewsExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/target/classes/com/example/demo/model/ov/ForumChangeLike.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/target/classes/generator/generatorConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/target/classes/mapping/AlarmMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/target/classes/mapping/Ban_ReasonsMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/target/classes/mapping/BlacklistMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/target/classes/mapping/CommentsMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/target/classes/mapping/FriendsMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/target/classes/mapping/HelpMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/target/classes/mapping/LikesMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/target/classes/mapping/LostlistMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/target/classes/mapping/ManagersMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/target/classes/mapping/NoticesMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/target/classes/mapping/Private_ChartsMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/target/classes/mapping/Tag_UsersMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/target/classes/mapping/TagsMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/target/classes/mapping/Unlock_ApplyMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/target/classes/mapping/UsersMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/platform/target/classes/mapping/ViewsMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/information_platform.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/information_platform.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/.idea/libraries/Maven__com_alibaba_druid_1_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/.idea/libraries/Maven__com_alibaba_druid_1_1_10.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/.idea/libraries/Maven__com_alibaba_druid_spring_boot_starter_1_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/.idea/libraries/Maven__com_github_pagehelper_pagehelper_5_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_autoconfigure_1_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_starter_1_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_46.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/.idea/libraries/Maven__org_mybatis_mybatis_3_5_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_2_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_3_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_2_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_3_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/Model/ResultCode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/Model/entity/Alarm.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/entity/Alarm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/Model/entity/AlarmExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/entity/AlarmExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/Model/entity/Ban_Reasons.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/entity/Ban_Reasons.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/Model/entity/Ban_ReasonsExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/entity/Ban_ReasonsExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/Model/entity/Blacklist.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/entity/Blacklist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/Model/entity/BlacklistExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/entity/BlacklistExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/Model/entity/Friends.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/entity/Friends.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/Model/entity/FriendsExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/entity/FriendsExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/Model/entity/Help.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/entity/Help.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/Model/entity/HelpExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/entity/HelpExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/Model/entity/Likes.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/entity/Likes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/Model/entity/LikesExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/entity/LikesExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/Model/entity/Lostlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/entity/Lostlist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/Model/entity/LostlistExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/entity/LostlistExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/Model/entity/Managers.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/entity/Managers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/Model/entity/ManagersExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/entity/ManagersExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/Model/entity/Notices.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/entity/Notices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/Model/entity/NoticesExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/entity/NoticesExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/Model/entity/Private_Charts.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/entity/Private_Charts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/Model/entity/Private_ChartsExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/entity/Private_ChartsExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/Model/entity/Tag_Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/entity/Tag_Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/Model/entity/Tag_UsersExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/entity/Tag_UsersExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/Model/entity/Tags.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/entity/Tags.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/Model/entity/TagsExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/entity/TagsExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/Model/entity/Unlock_Apply.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/entity/Unlock_Apply.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/Model/entity/Unlock_ApplyExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/entity/Unlock_ApplyExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/Model/entity/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/entity/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/Model/entity/UsersExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/entity/UsersExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/Model/entity/Views.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/entity/Views.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/Model/entity/ViewsExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/model/entity/ViewsExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/Model/jsonRequest/Login.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/Model/jsonRequest/Message.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/Model/ov/FindNoticeInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/Model/ov/Result.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/controller/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/dao/AlarmMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/dao/AlarmMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/dao/Ban_ReasonsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/dao/Ban_ReasonsMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/dao/BlacklistMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/dao/BlacklistMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/dao/FriendsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/dao/FriendsMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/dao/HelpMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/dao/HelpMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/dao/LikesMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/dao/LikesMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/dao/LostlistMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/dao/LostlistMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/dao/ManagersMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/dao/ManagersMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/dao/NoticesMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/dao/NoticesMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/dao/Private_ChartsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/dao/Private_ChartsMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/dao/Tag_UsersMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/dao/Tag_UsersMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/dao/TagsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/dao/TagsMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/dao/Unlock_ApplyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/dao/Unlock_ApplyMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/dao/UsersMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/dao/UsersMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/dao/ViewsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/dao/ViewsMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/response/CommonReturnType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/service/Impl/NoticeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/service/Impl/NoticeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/service/MessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/service/MessageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/service/NoticeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/service/NoticeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/tools/ResultTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/tools/ResultTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/resources/generator/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/resources/generator/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/resources/mapping/AlarmMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/resources/mapping/AlarmMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/resources/mapping/Ban_ReasonsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/resources/mapping/Ban_ReasonsMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/resources/mapping/BlacklistMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/resources/mapping/BlacklistMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/resources/mapping/ClassMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/resources/mapping/FriendsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/resources/mapping/FriendsMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/resources/mapping/HelpMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/resources/mapping/HelpMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/resources/mapping/LikesMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/resources/mapping/LikesMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/resources/mapping/LostlistMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/resources/mapping/LostlistMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/resources/mapping/ManagersMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/resources/mapping/ManagersMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/resources/mapping/NoticesMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/resources/mapping/NoticesMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/resources/mapping/Private_ChartsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/resources/mapping/Private_ChartsMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/resources/mapping/Tag_UsersMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/resources/mapping/Tag_UsersMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/resources/mapping/TagsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/resources/mapping/TagsMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/resources/mapping/Unlock_ApplyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/resources/mapping/Unlock_ApplyMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/resources/mapping/UsersMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/resources/mapping/UsersMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/main/resources/mapping/ViewsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/platform/src/main/resources/mapping/ViewsMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/platform/src/test/java/com/example/demo/DemoApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/information_platform/build/webpack.dev.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/information_platform/build/webpack.dev.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/information_platform/config/dev.env.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/information_platform/config/dev.env.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/information_platform/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/information_platform/config/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/information_platform/config/prod.env.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/information_platform/config/prod.env.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/information_platform/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/information_platform/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/information_platform/src/components/Head.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/information_platform/src/components/Head.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/information_platform/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/information_platform/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/information_platform/src/components/Bottom.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/information_platform/src/components/Bottom.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/information_platform/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/information_platform/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/information_platform/src/views/Appeal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/information_platform/src/views/Appeal.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/information_platform/src/views/ChangeUserDetail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/information_platform/src/views/ChangeUserDetail.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/information_platform/src/views/Find.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/information_platform/src/views/Find.vue" afterDir="false" />
@@ -237,11 +15,9 @@
       <change beforePath="$PROJECT_DIR$/frontend/information_platform/src/views/ForumPage3.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/information_platform/src/views/ForumPage3.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/information_platform/src/views/ForumPage4.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/information_platform/src/views/ForumPage4.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/information_platform/src/views/Help.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/information_platform/src/views/Help.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/information_platform/src/views/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/information_platform/src/views/Login.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/information_platform/src/views/Message.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/information_platform/src/views/Message.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/information_platform/src/views/Report.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/information_platform/src/views/Report.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/information_platform/src/views/UserDetail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/information_platform/src/views/UserDetail.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/information_platform/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/information_platform/store/store.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -250,18 +26,147 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@139.199.57.40" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@139.199.57.40" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@139.199.57.40" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="platform: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@139.199.57.40" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="platform: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="Views: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="DemoApplication.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/DemoApplication.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/information_platform/src/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Login.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/information_platform/src/views/Login.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2489">
+              <caret line="131" column="34" selection-start-line="131" selection-start-column="34" selection-end-line="131" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AnnouncementDate.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/information_platform/src/views/AnnouncementDate.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="103" column="19" lean-forward="true" selection-start-line="103" selection-start-column="19" selection-end-line="103" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bottom.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/information_platform/src/components/Bottom.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Appeal.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/information_platform/src/views/Appeal.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+              <caret line="39" column="27" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChangeUserDetail.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/information_platform/src/views/ChangeUserDetail.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1558">
+              <caret line="82" column="20" selection-start-line="82" selection-start-column="3" selection-end-line="82" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ForumCreate.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/information_platform/src/views/ForumCreate.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="107">
+              <caret line="14" column="27" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomePage.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/information_platform/src/views/HomePage.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="494">
+              <caret line="26" column="94" selection-start-line="26" selection-start-column="94" selection-end-line="26" selection-end-column="94" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#Panel#0;n#Collapse#0;n#Content#0;n#Layout#0;n#Layout#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Notices" pinned="false" current-in-tab="false">
+        <entry file="das://16eccd90-e1bd-4b5a-bbd8-d462da91ca12/schema/platform/table/Notices">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Likes" pinned="false" current-in-tab="false">
+        <entry file="das://16eccd90-e1bd-4b5a-bbd8-d462da91ca12/schema/platform/table/Likes">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>bottom</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -1450,9 +1355,53 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="information_platform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="information_platform" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="information_platform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="information_platform" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="information_platform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="information_platform" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="information_platform" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="information_platform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="information_platform" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="information_platform" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="information_platform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="information_platform" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="information_platform" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="information_platform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="information_platform" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="information_platform" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -1533,38 +1482,61 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="949000" />
+    <option name="totallyTimeSpent" value="1360000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info id="Image Layers" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info id="Capture Tool" />
-      <window_info id="Designer" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32876712" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.19921875" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info id="Designer" order="4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Database Console" order="8" weight="0.32876712" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info id="Favorites" order="4" side_tool="true" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1574,10 +1546,284 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/frontend/information_platform/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/information_platform/src/views/Login.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2489">
+          <caret line="131" column="30" selection-start-line="131" selection-start-column="30" selection-end-line="131" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/information_platform/src/views/HomePage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" column="94" lean-forward="true" selection-start-line="26" selection-start-column="94" selection-end-line="26" selection-end-column="94" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#Panel#0;n#Collapse#0;n#Content#0;n#Layout#0;n#Layout#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/information_platform/src/views/Forum.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2204">
+          <caret line="118" column="56" lean-forward="true" selection-start-line="118" selection-start-column="56" selection-end-line="118" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://16eccd90-e1bd-4b5a-bbd8-d462da91ca12/schema/platform/table/Notices">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://16eccd90-e1bd-4b5a-bbd8-d462da91ca12/schema/platform/table/Likes">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/information_platform/src/views/AnnouncementDate.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1900">
+          <caret line="102" column="31" selection-start-line="102" selection-start-column="31" selection-end-line="102" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/DemoApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/DemoApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/DemoApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/information_platform/src/views/Manage/ForumDelete.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-741" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/information_platform/src/views/Manage/AnnouncementDelete.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="36" column="100" lean-forward="true" selection-start-line="36" selection-start-column="72" selection-end-line="36" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/information_platform/src/views/Announcement.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="11" column="100" selection-start-line="11" selection-start-column="100" selection-end-line="11" selection-end-column="100" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#Panel#0;n#Collapse#0;n#div#0;n#TabPane#0;n#Tabs#0;n#Col#0;n#Row#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#Panel#0;n#Collapse#1;n#div#0;n#TabPane#0;n#Tabs#0;n#Col#0;n#Row#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#Panel#0;n#Collapse#2;n#div#0;n#TabPane#0;n#Tabs#0;n#Col#0;n#Row#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#Panel#0;n#Collapse#0;n#div#0;n#TabPane#1;n#Tabs#0;n#Col#0;n#Row#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#Panel#0;n#Collapse#0;n#div#0;n#TabPane#2;n#Tabs#0;n#Col#0;n#Row#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#Collapse#0;n#div#0;n#TabPane#3;n#Tabs#0;n#Col#0;n#Row#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#Panel#0;n#Collapse#0;n#div#0;n#TabPane#3;n#Tabs#0;n#Col#0;n#Row#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/information_platform/src/views/Forum.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2204">
+          <caret line="126" column="56" selection-start-line="126" selection-start-column="56" selection-end-line="126" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/information_platform/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/information_platform/src/views/Login.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2489">
+          <caret line="131" column="34" selection-start-line="131" selection-start-column="34" selection-end-line="131" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://16eccd90-e1bd-4b5a-bbd8-d462da91ca12/schema/platform/table/Users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/16eccd90-e1bd-4b5a-bbd8-d462da91ca12/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://16eccd90-e1bd-4b5a-bbd8-d462da91ca12/schema/platform/table/Lostlist">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/information_platform/src/views/LostAFound/Board.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="71" column="35" lean-forward="true" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://16eccd90-e1bd-4b5a-bbd8-d462da91ca12/schema/platform/table/Managers">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://16eccd90-e1bd-4b5a-bbd8-d462da91ca12/schema/platform/table/Notices">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://16eccd90-e1bd-4b5a-bbd8-d462da91ca12/schema/platform/table/Help">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://16eccd90-e1bd-4b5a-bbd8-d462da91ca12/schema/platform/table/Friends">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://16eccd90-e1bd-4b5a-bbd8-d462da91ca12/schema/platform/table/Comments">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://16eccd90-e1bd-4b5a-bbd8-d462da91ca12/schema/platform/table/Blacklist">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://16eccd90-e1bd-4b5a-bbd8-d462da91ca12/schema/platform/table/Ban_Reasons">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://16eccd90-e1bd-4b5a-bbd8-d462da91ca12/schema/platform/table/Alarm">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://16eccd90-e1bd-4b5a-bbd8-d462da91ca12/schema/platform/table/Views">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://16eccd90-e1bd-4b5a-bbd8-d462da91ca12/schema/platform/table/Likes">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/information_platform/src/views/HomePage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" column="94" selection-start-line="26" selection-start-column="94" selection-end-line="26" selection-end-column="94" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#Panel#0;n#Collapse#0;n#Content#0;n#Layout#0;n#Layout#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/DemoApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/platform/src/main/java/com/example/demo/DemoApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/information_platform/src/views/ForumCreate.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/information_platform/src/views/Appeal.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="39" column="27" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/information_platform/src/views/ChangeUserDetail.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1558">
+          <caret line="82" column="20" selection-start-line="82" selection-start-column="3" selection-end-line="82" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/information_platform/src/views/AnnouncementDate.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="103" column="19" lean-forward="true" selection-start-line="103" selection-start-column="19" selection-end-line="103" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/information_platform/src/components/Bottom.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
         </state>
       </provider>
     </entry>
